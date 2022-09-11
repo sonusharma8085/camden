@@ -40,7 +40,6 @@ app.get('/create-product',function(req,res){
 })
 
 app.post('/create-product',function(req,res){
-    // console.log(req.body);
     let title = req.body.title;
     let description = req.body.description;
     let price = req.body.price;
