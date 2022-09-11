@@ -1,0 +1,44 @@
+<div class="row mt-5">
+<div class="col-md-8 card offset-2">
+    <h2>All Products </h2>
+    <hr>
+    <table class="table table-bordered">
+        <tr>
+        <th>S.NO</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Featured</th>
+        <th>Action</th>
+    </tr>
+    <% for(let i = 0; i < products.length; i++) { %>
+        <tr>
+            <td>
+                <%= i + 1; %>
+            </td>
+            <td>
+                <%= products[i].title; %>
+            </td>
+            <td>
+                <%= products[i].description; %>
+            </td>
+            <td>
+                <%= products[i].price; %>
+            </td>
+            <td>
+                <%= products[i].quantity; %>
+            </td>
+            <td>
+                <%= products[i].isFeatured; %>
+            </td>
+            <td><button type="submit">Delete</button>
+                <button type="submit">Edit</button></td>
+        </tr>
+        <%} %>
+
+   
+
+    </table>
+</div>
+</div>
